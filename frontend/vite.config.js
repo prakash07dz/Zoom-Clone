@@ -8,10 +8,11 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom'], // Split react and react-dom into a separate chunk
+          vendor: ['react', 'react-dom'],
         },
       },
     },
-    chunkSizeWarningLimit: 2000, // Set the chunk size limit to 2MB
+    chunkSizeWarningLimit: 2000,
+    outDir: 'frontend/dist',
   },
 });
